@@ -39,7 +39,7 @@ void N(float e) {
     float x = x0 + dx(x0,y0);
     float y = y0 + dy(x0,y0);
     while (abs(dx(x0,y0)) > e && abs(dy(x0, y0)) > e) {
-        x0 = x; y0 = x;
+        x0 = x; y0 = y;
         x = x0 + dx(x0, y0);
         y = y0 + dy(x0, y0);
         count++;
